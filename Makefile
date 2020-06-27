@@ -3,6 +3,6 @@ build:
 clean:
 	rm plugin
 docker-build:
-	docker build -t rshriram/istio-coredns-plugin:istio-1.1 .
+	docker build -t <docker-image-name:label> .
 docker-push:
-	docker push rshriram/istio-coredns-plugin:istio-1.1
+	docker push <docker-image-name:label>
