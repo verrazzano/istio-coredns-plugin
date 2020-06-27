@@ -1,4 +1,4 @@
-module github/verrazzano/istio-coredns-plugin-mirror
+module github.com/verrazzano/istio-coredns-plugin-mirror
 
 go 1.13
 
