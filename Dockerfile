@@ -22,14 +22,10 @@ ENV GO111MODULE=on
 
 # Fetch all the dependencies
 COPY . .
-
-#RUN go clean -modcache
+# Build plugin
 RUN go mod download \
     && GOOS=linux go build plugin.go
 
-# FROM build_base AS server_builder
-# COPY . .
-# RUN GOOS=linux go build plugin.go
 
 FROM oraclelinux:7-slim
 
