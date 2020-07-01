@@ -24,7 +24,7 @@ ENV GO111MODULE=on
 COPY . .
 # Build plugin
 RUN go mod download \
-    && GOOS=linux go build plugin.go
+    && make build
 
 
 FROM oraclelinux:7-slim
