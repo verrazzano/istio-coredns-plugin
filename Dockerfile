@@ -1,4 +1,4 @@
-FROM oraclelinux:7-slim
+FROM container-registry.oracle.com/os/oraclelinux:7-slim
 
 RUN yum update -y \
     && yum-config-manager --save --setopt=ol7_ociyum_config.skip_if_unavailable=true \
